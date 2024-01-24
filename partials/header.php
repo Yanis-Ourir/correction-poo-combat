@@ -9,3 +9,8 @@
     <title>POO - Combat</title>
 </head>
 <body>
+<nav class="navbar bg-info">
+    <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1" href="index.php">POO - Combat</a>
+    </div>
+</nav>

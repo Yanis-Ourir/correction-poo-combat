@@ -8,6 +8,8 @@ abstract class Hero
     protected int $mana = 0; // protected permet de rendre la propriété accessible aux classes filles
     private string $class;
 
+    protected int $manaCost = 0;
+
     public function __construct(array $data) {
         $this->hydrate($data); // hydrate() va permettre d'hydrater l'objet Hero avec les données de la BDD ou du formulaire
     }
@@ -92,5 +94,15 @@ abstract class Hero
     public function getMana() : int
     {
         return $this->mana;
+    }
+
+    public function setManaCost(int $manaCost) : void
+    {
+        $this->manaCost = $manaCost;
+    }
+
+    public function getManaCost() : int
+    {
+        return $this->manaCost;
     }
 }
